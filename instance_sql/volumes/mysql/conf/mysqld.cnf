@@ -1,0 +1,10 @@
+# this is only for the mysqld standalone daemon
+[mysqld]
+
+# Instead of skip-networking the default is now to listen only on
+# localhost which is more compatible and is not less secure.
+bind-address = 10.0.0.3
+
+# Error log - should be very few entries.
+#
+log_error = /var/log/mysql/error.log
