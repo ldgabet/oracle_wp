@@ -1,9 +1,9 @@
 #!/bin/sh
 
 CLOUDFLARE_FILE_PATH=/etc/nginx/global/cloudflare.conf
-CURRENTDATE=`date +"%Y-%m-%d %T"
+CURRENTDATE=`date +"%Y-%m-%d %T"`
 
-echo "File generated ${CURRENTDATE}" > $CLOUDFLARE_FILE_PATH;
+echo "# File generated ${CURRENTDATE}" > $CLOUDFLARE_FILE_PATH;
 echo "" >> $CLOUDFLARE_FILE_PATH;
 
 echo "# Cloufdlare's IPs (https://www.cloudflare.com/fr-fr/ips/)" >> $CLOUDFLARE_FILE_PATH;
