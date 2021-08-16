@@ -17,7 +17,7 @@ RUN chmod uga+x /usr/local/bin/install-php-extensions \
     opcache \
     sockets \
     imagick \
-    memcached \
+    redis \
     zip
 
 RUN apt-get update && apt-get install --no-install-recommends --yes \
